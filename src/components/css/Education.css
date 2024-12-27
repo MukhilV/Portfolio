@@ -1,0 +1,10 @@
+.edu-container{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+}
+
+.edu-header{
+    padding: 10%;
+}

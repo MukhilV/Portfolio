@@ -1,0 +1,10 @@
+.skills-container{
+    display: flex; 
+    justify-content: space-between;
+    align-items: center;
+    width: 100%
+}
+
+.skills-header{
+    padding: 10%;
+}

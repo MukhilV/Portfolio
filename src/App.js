@@ -2,15 +2,15 @@
 // App.js
 import React, { useState, useEffect } from 'react';
 import './App.css';
-import Hero from './components/Hero';
-import About from './components/About';
-import Experience from './components/Experience';
-import Education from './components/Education';
-import Skills from './components/Skills';
-import Projects from './components/Projects';
+import Hero from './components/js/Hero';
+import About from './components/js/About';
+import Experience from './components/js/Experience';
+import Education from './components/js/Education';
+import Skills from './components/js/Skills';
+import Projects from './components/js/Projects';
 
 function App() {
-  const [activeSection, setActiveSection] = useState('hero');
+  const [activeSection, setActiveSection] = useState('home');
 
   const handleScroll = () => {
     const sections = document.querySelectorAll('section');
@@ -23,6 +23,7 @@ function App() {
 
       if (scrollPosition >= offsetTop && scrollPosition < offsetTop + offsetHeight) {
         setActiveSection(id);
+        section.classList.add('visible');
       }
     });
   };
@@ -44,15 +45,21 @@ function App() {
     };
   }, []);
 
+  useEffect(()=>{
+    window.scrollTo(0,1);
+  },[])
+
+  const navItems = ['home', 'about', 'experience', 'education', 'skills', 'projects'];
+
   return (
     <div className="App">
       <nav className="navbar">
-          <div class = "nav-container">
-            <div class = "site-name">Mukhil's Portfolio</div>
-            <div class = "nav-items">
+          <div className = "nav-container">
+            <div className = "site-name">Mukhil Venkataramanan</div>
+            <div className = "nav-items">
               <ul>
                 {
-                ['hero', 'about', 'experience', 'education', 'skills', 'projects'].map((section) => (
+                navItems.map((section) => (
                   <li
                     key={section}
                     className={activeSection === section ? 'active' : ''}
@@ -66,7 +73,7 @@ function App() {
             </div>
           </div>
       </nav>
-      <Hero id="hero" />
+      <Hero id="home" />
       <About id="about" />
       <Experience id="experience" />
       <Education id="education" />
