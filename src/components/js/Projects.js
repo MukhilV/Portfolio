@@ -10,21 +10,19 @@ function Projects({ id }){
         <h3>{project.title}</h3>
         <p>{project.description}</p>
         <a href={project.url}>{project.url}</a>
-        <img src={project.img} alt={project.title} />
+        <img className="prj-img" src={project.img} alt={project.title} />
       </div>
       );
   });
   
   return (
-    <section id={id} className="section">
+    <section id={id} className="section extend-height">
     <div className='proj-container'>
       <div className='proj-header'>
         <h1>{data.Projects.title}</h1>
       </div>
       <div>
-        <p>
           {projects}
-        </p>
       </div> 
     </div>
   </section> 

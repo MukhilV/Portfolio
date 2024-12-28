@@ -1,4 +1,4 @@
-.exp-container{
+.contact-container{
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
@@ -6,6 +6,6 @@
     width: 75%
 }
 
-.exp-header{
+.contact-header{
     margin: auto;
 }

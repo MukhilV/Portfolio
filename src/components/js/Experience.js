@@ -16,15 +16,13 @@ function Experience({ id }) {
   });
 
   return (
-    <section id={id} className="section">
+    <section id={id} className="section extend-height">
       <div className='exp-container'>
         <div className='exp-header'>
           <h1>{data.Experience.title}</h1>
         </div>
         <div>
-          <p>
             {experience}
-          </p>
         </div> 
       </div>
     </section> 

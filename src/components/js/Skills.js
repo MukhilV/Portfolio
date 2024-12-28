@@ -46,18 +46,20 @@ function Skills({ id }){
       <div className='skills-header'>
         <h1>{data.Skills.title}</h1>
       </div>
-      <div>
-          {programming_languages}
-      </div> 
-      <div>
-          {frame_work_and_tools}
-      </div> 
-      <div>
-          {specialized_tools}
-      </div> 
-      <div>
-          {data_science}
-      </div> 
+      <div className='skills-content'>
+        <div>
+            {programming_languages}
+        </div> 
+        <div>
+            {frame_work_and_tools}
+        </div> 
+        <div>
+            {specialized_tools}
+        </div> 
+        <div>
+            {data_science}
+        </div> 
+      </div>
     </div>
   </section> 
   );

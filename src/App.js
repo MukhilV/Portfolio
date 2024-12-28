@@ -8,6 +8,7 @@ import Experience from './components/js/Experience';
 import Education from './components/js/Education';
 import Skills from './components/js/Skills';
 import Projects from './components/js/Projects';
+import Contact from './components/js/Contact';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -49,7 +50,7 @@ function App() {
     window.scrollTo(0,1);
   },[])
 
-  const navItems = ['home', 'about', 'experience', 'education', 'skills', 'projects'];
+  const navItems = ['home', 'about', 'experience', 'education', 'skills', 'projects', 'contact'];
 
   return (
     <div className="App">
@@ -79,6 +80,7 @@ function App() {
       <Education id="education" />
       <Skills id="skills" />
       <Projects id="projects" />
+      <Contact id="contact" />
     </div>
   );
 }

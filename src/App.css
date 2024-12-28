@@ -43,6 +43,10 @@ body {
   transition: opacity 1s ease-out, transform 1s ease-out;
 }
 
+.extend-height {
+  height: auto;
+}
+
 
 .section.visible {
   opacity: 1;

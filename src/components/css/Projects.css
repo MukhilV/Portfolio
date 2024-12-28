@@ -1,10 +1,15 @@
 .proj-container{
-    display: flex; 
+    display: flex;
+    flex-direction: column; 
     justify-content: space-between;
     align-items: center;
-    width: 100%
+    width: 75%
 }
 
 .proj-header{
-    padding: 10%;
+    margin: auto;
+}
+
+.prj-img{
+    width: 200px;
 }

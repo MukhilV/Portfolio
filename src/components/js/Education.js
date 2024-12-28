@@ -20,12 +20,10 @@ function Education ({ id }) {
     <section id={id} className="section">
     <div className='edu-container'>
       <div className='edu-header'>
-        <h1>{data.Experience.title}</h1>
+        <h1>{data.Education.title}</h1>
       </div>
       <div>
-        <p>
           {education}
-        </p>
       </div> 
     </div>
   </section> 
