@@ -12,10 +12,22 @@ import Contact from './components/js/Contact';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
+
+  const handleResize = () => {
+    setIsMobile(window.innerWidth <= 920);
+  };
 
   const handleScroll = () => {
+    if(window.scrollY >= 100){
+      document.querySelector('.navbar').classList.add('navbar-opaque');
+    } else {
+      document.querySelector('.navbar').classList.remove('navbar-opaque');
+    }
     const sections = document.querySelectorAll('section');
-    const scrollPosition = window.scrollY + 100; // Offset for nav height
+    const navbarLength = document.querySelector('.navbar').offsetHeight;
+    const scrollPosition = window.scrollY + navbarLength -25; // Offset for nav height
 
     sections.forEach((section) => {
       const id = section.getAttribute('id');
@@ -46,6 +58,16 @@ function App() {
     };
   }, []);
 
+  // Check screen width to toggle mobile view
+  useEffect(() => {
+
+    handleResize(); // Initialize on component mount
+    window.addEventListener('resize', handleResize);
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
   useEffect(()=>{
     window.scrollTo(0,1);
   },[])
@@ -55,25 +77,55 @@ function App() {
   return (
     <div className="App">
       <nav className="navbar">
-          <div className = "nav-container">
-            <div className = "site-name">Mukhil Venkataramanan</div>
-            <div className = "nav-items">
-              <ul>
-                {
-                navItems.map((section) => (
-                  <li
-                    key={section}
-                    className={activeSection === section ? 'active' : ''}
-                    onClick={() => scrollToSection(section)}
-                  >
-                    {section.charAt(0).toUpperCase() + section.slice(1)}
-                  </li>
-                ))
-              }
-              </ul>
-            </div>
+      <div className="nav-container">
+        <div className="site-name">MUKHIL V.</div>
+        
+        {isMobile ? (
+          // Hamburger Menu for Mobile
+          <div className="hamburger-menu">
+            <button
+              className="hamburger-icon"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+            >
+              ☰
+            </button>
+            {isMenuOpen && (
+              <div className="mobile-nav-items">
+                <ul>
+                  {navItems.map((section) => (
+                    <li
+                      key={section}
+                      className={activeSection === section ? 'active' : ''}
+                      onClick={() => {
+                        scrollToSection(section);
+                        setIsMenuOpen(false); // Close menu on item click
+                      }}
+                    >
+                      {section.charAt(0).toUpperCase() + section.slice(1)}
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
           </div>
-      </nav>
+        ) : (
+          // Full Navigation Bar for Desktop
+          <div className="nav-items">
+            <ul>
+              {navItems.map((section) => (
+                <li
+                  key={section}
+                  className={activeSection === section ? 'active' : ''}
+                  onClick={() => scrollToSection(section)}
+                >
+                  {section.charAt(0).toUpperCase() + section.slice(1)}
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      </div>
+    </nav>
       <Hero id="home" />
       <About id="about" />
       <Experience id="experience" />

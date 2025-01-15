@@ -1,6 +1,26 @@
 .hero-container{
     display: flex; 
-    justify-content: space-around;
+    /* justify-content: space-around; */
     align-items: center;
-    width: 70%
+    padding-top: 150px;
+    width: 80%;
+}
+
+.hero-bg {
+    background-image: url('../../images/hero-bg.jpg');
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    height: 100vh; /* Make the section occupy the full viewport height */
+    width: 100%; /* Ensure it spans the entire width of the container */
+}
+
+.hero-name{
+    color: wheat;
+    font-size: 50px;
+}
+
+.hero-desc{
+    color: wheat;
+    font-size: 20px;
 }

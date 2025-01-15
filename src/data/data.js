@@ -9,8 +9,10 @@ const data ={
 
     "Home": {
         "name": "Mukhil Venkataramanan",
-        "description": "Software Engineer",
+        "description": "CS Grad @ SUNY Binghamton | Ex-SDE @ Ford Motor Company",
     },
+
+    // | Computer Science Graduate Student | Open to 2025 Internship/Co-op/Full-time Opportunities
 
 
     "About": {
