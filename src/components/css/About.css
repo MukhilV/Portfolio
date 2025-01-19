@@ -1,18 +1,30 @@
 .about-container{
     display: flex; 
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 75%
+    width: 75%;
 }
 
-.about-header{
+/* .about-header{
     padding-right: 5%;
-}
-
-/* .about-content{
-    padding: auto;
 } */
+
+
+.about-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 
 .portfolio-photo{
     width: 300px;
+}
+
+.about-image{
+    padding: 5%;
+}
+
+.about-text{
+    text-align: justify;
 }

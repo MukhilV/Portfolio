@@ -7,13 +7,31 @@ function Education ({ id }) {
 
   const education = data.Education.schools.map((school, index) => {
     return (
-      <div key={index} className='school'>
-        <h3>{school.degree}</h3>
-        <h4>{school.school}</h4>
-        <p>{school.date}</p>
+      <div key={index} className="job-box">
+        <div className="job-header">
+          <h3>{school.degree}</h3>
+          <div>
+            <h4>{school.school}</h4>
+            <p className="job-date">{school.date}</p>
+          </div>
+        </div>
+        <div className="job-content">
+          <p>{school.description}</p>
+        </div>
       </div>
     );
   });
+
+  // const education = data.Education.schools.map((school, index) => {
+  //   return (
+  //     <div key={index} className='school'>
+  //       <h3>{school.degree}</h3>
+  //       <h4>{school.school}</h4>
+  //       <p>{school.date}</p>
+  //       <p>{school.description}</p>
+  //     </div>
+  //   );
+  // });
 
 
   return (

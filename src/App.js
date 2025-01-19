@@ -26,8 +26,8 @@ function App() {
       document.querySelector('.navbar').classList.remove('navbar-opaque');
     }
     const sections = document.querySelectorAll('section');
-    const navbarLength = document.querySelector('.navbar').offsetHeight;
-    const scrollPosition = window.scrollY + navbarLength -25; // Offset for nav height
+    const navbarHeight = document.querySelector('.navbar').offsetHeight;
+    const scrollPosition = window.scrollY + navbarHeight  + 10; // Offset for nav height
 
     sections.forEach((section) => {
       const id = section.getAttribute('id');
@@ -45,7 +45,7 @@ function App() {
     const element = document.getElementById(id);
     if (element) {
       window.scrollTo({
-        top: element.offsetTop,
+        top: element.offsetTop - document.querySelector('.navbar').offsetHeight,
         behavior: 'smooth',
       });
     }

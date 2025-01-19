@@ -70,12 +70,14 @@ const data ={
             {
                 "degree": "Master of Science in Computer Science",
                 "school": "SUNY Binghamton",
-                "date": "Aug 2023 - May 2025"
+                "date": "Aug 2023 - May 2025",
+                "description": "Desc 1"
             },
             {
                 "degree": "Bachelor of Engineering in Computer Science and Engineering",
                 "school": "Anna University",
-                "date": "2017 - 2021"
+                "date": "2017 - 2021",
+                "description": "Desc 2"
             }
         ]
     },
