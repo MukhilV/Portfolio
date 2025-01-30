@@ -124,9 +124,9 @@ body {
 } */
 
 .section {
-  height: 100vh;
+  height: auto;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   border-bottom: 1px solid #ccc;
   opacity: 0;

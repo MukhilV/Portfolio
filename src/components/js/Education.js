@@ -16,7 +16,9 @@ function Education ({ id }) {
           </div>
         </div>
         <div className="job-content">
-          <p>{school.description}</p>
+          <p>{school.description.map((points, idx) => {
+            return <li key={idx}>{points}</li>
+          })}</p>
         </div>
       </div>
     );

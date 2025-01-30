@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     width: 75%;
+    padding-top: 7%;
   }
   
   /* Header Section */
@@ -57,5 +58,17 @@
     font-size: 1rem;
     line-height: 1.5;
     color: #444; /* Text color for descriptions */
+  }
+
+  .job-description {
+    margin-top: 10px;
+    padding-left: 20px;
+    list-style-type: disc; /* Bullet points */
+  }
+  
+  .job-description li {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    color: #444;
   }
   

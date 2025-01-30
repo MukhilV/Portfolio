@@ -4,6 +4,7 @@
     justify-content: space-between;
     align-items: center;
     width: 75%;
+    padding-top: 7%;
 }
 
 /* .about-header{
@@ -27,4 +28,8 @@
 
 .about-text{
     text-align: justify;
+}
+
+.variable-height{
+    height: auto;
 }

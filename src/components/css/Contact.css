@@ -3,7 +3,8 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 75%
+    width: 75%;
+    padding-top: 7%;
 }
 
 .contact-header{

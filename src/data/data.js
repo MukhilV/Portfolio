@@ -39,27 +39,26 @@ const data ={
                 "title": "Teaching and Research Assistant",
                 "company": "SUNY Binghamton",
                 "date": "Aug 2024 - Present",
-                "description": " Enhanced the 'Online Preference Reporting and Aggregation' (OPRA) Django application to host polls and allocation " + 
-                    "problems related to the research field of Group Decision Making and Computational Social Choice. " +
-                    "Upgraded and maintained on-premise dev & prod servers and documented the user-guide with VitePress. " + 
-                    "Spearheading an RAG project to automate Wikipedia hyperlink detection retrieval of relevant articles. " +
-                    "Mentored over 50 students in Machine Learning concepts and projects. "
+                "description": ["Enhanced the 'Online Preference Reporting and Aggregation' (OPRA) Django application to host polls and allocation problems related to the research field of Group Decision Making and Computational Social Choice. " ,
+                    "Upgraded and maintained on-premise dev & prod servers and documented the user-guide with VitePress. " ,
+                    "Spearheading an RAG project to automate Wikipedia hyperlink detection retrieval of relevant articles. " ,
+                    "Mentored over 50 students in Machine Learning concepts and projects."]
             },
             {
                 "title": "Software Engineer",
                 "company": "Ford Motor Company",
                 "date": "April 2023 - Aug 2023",
-                "description": "Led cross-functional discussions with Solution Architects, Infrastructure, and Integration teams to implement user stories " +
-                    "Streamlined production troubleshooting. Designed and migrated maps APIs used by Ford websites " +  
-                    "Mentored interns, facilitating onboarding processes and environment setup"
+                "description": ["Led cross-functional discussions with Solution Architects, Infrastructure, and Integration teams to implement user stories. " ,
+                    "Streamlined production troubleshooting. Designed and migrated maps APIs used by Ford websites. " ,  
+                    "Mentored interns, facilitating onboarding processes and environment setup."]
             },
             {
                 "title": "Junior Software Engineer",
                 "company": "Ford Motor Company",
                 "date": "Sep 2021 - April 2023",
-                "description": " Worked on the enhancing an e-commerce platform enabling vehicle reservations for 6+ global markets. "+ 
-                "Delivered a high-impact feature reducing reservation steps by 30%, earning team recognition.  "+
-                "Configured EV reservation journeys for the New Zealand market. Contributed as L2 support for the Team. ." 
+                "description": [" Worked on the enhancing an e-commerce platform enabling vehicle reservations for 6+ global markets. ", 
+                "Delivered a high-impact feature reducing reservation steps by 30%, earning team recognition.  ",
+                "Configured EV reservation journeys for the New Zealand market. Contributed as L2 support for the Team. ." ]
             }
         ]
     },
@@ -71,123 +70,132 @@ const data ={
                 "degree": "Master of Science in Computer Science",
                 "school": "SUNY Binghamton",
                 "date": "Aug 2023 - May 2025",
-                "description": "Desc 1"
+                "description": ["Talk about RA","Talk about TA","Talk about Courses"]
             },
             {
                 "degree": "Bachelor of Engineering in Computer Science and Engineering",
                 "school": "Anna University",
                 "date": "2017 - 2021",
-                "description": "Desc 2"
+                "description": ["Final yr proj - E-society","Best student award","Big data coe"]
             }
         ]
     },
 
     "Skills": {
-        "title": "Skills",
-        "programming_languages": [
+        "title": "Technical Skills",
+        "skillset": [
             {
-                "name": "Python",
-                "level": "90%"
+                "category": "Programming Languages",
+                "skills": [
+                    {
+                        "name": "Python",
+                        "level": "90%"
+                    },
+                    {
+                        "name": "Java",
+                        "level": "80%"
+                    },
+                    {
+                        "name": "JavaScript",
+                        "level": "85%"
+                    },
+                    {
+                        "name": "SQL",
+                        "level": "80%"
+                    },
+                    {
+                        "name": "C++",
+                        "level": "80%"
+                    },
+                    {
+                        "name": "C",
+                        "level": "70%"
+                    }
+                ]
             },
             {
-                "name": "Java",
-                "level": "80%"
-            },
+                "category": "Frame Works and Tools",
+                "skills": [
+                    {
+                        "name": "React",
+                        "level": "90%"
+                    },
+                    {
+                        "name": "Redux",
+                        "level": "80%"
+                    },
+                    {
+                        "name": "Django",
+                        "level": "85%"
+                    },
+                    {
+                        "name": "Spring Boot",
+                        "level": "80%"
+                    },
+                    {
+                        "name": "Git",
+                        "level": "80%"
+                    },
+                    {
+                        "name": "Docker",
+                        "level": "70%"
+                    }
+                ]
+            }, {
+                "category": "Specialized Tools",
+                "skills": [
+                    {
+                        "name": "AEM",
+                        "level": "90%"
+                    },
+                    {
+                        "name": "Akamai",
+                        "level": "80%"
+                    },
+                    {
+                        "name": "Dynatrace",
+                        "level": "85%"
+                    },
+                    {
+                        "name": "Splunk",
+                        "level": "80%"
+                    },
+                    {
+                        "name": "Jira",
+                        "level": "80%"
+                    },
+                    {
+                        "name": "SonarQube",
+                        "level": "70%"
+                    }
+                ]
+            }, 
             {
-                "name": "JavaScript",
-                "level": "85%"
-            },
-            {
-                "name": "SQL",
-                "level": "80%"
-            },
-            {
-                "name": "C++",
-                "level": "80%"
-            },
-            {
-                "name": "C",
-                "level": "70%"
+                "category": "Data Science",
+                "skills": [
+                    {
+                        "name": "Data Collection and Analysis",
+                        "level": "90%"
+                    },
+                    {
+                        "name": "Deep Neural Networks (Pytorch)",
+                        "level": "80%"
+                    },
+                    {
+                        "name": "CNN",
+                        "level": "85%"
+                    },
+                    {
+                        "name": "Transformers",
+                        "level": "80%"
+                    },
+                    {
+                        "name": "Prompt Engineering",
+                        "level": "80%"
+                    }
+                ]
             }
-        ],
-
-        "frame_work_and_tools": [
-            {
-                "name": "React",
-                "level": "90%"
-            },
-            {
-                "name": "Redux",
-                "level": "80%"
-            },
-            {
-                "name": "Django",
-                "level": "85%"
-            },
-            {
-                "name": "Spring Boot",
-                "level": "80%"
-            },
-            {
-                "name": "Git",
-                "level": "80%"
-            },
-            {
-                "name": "Docker",
-                "level": "70%"
-            }
-        ],
-
-        "specialized_tools": [
-            {
-                "name": "AEM",
-                "level": "90%"
-            },
-            {
-                "name": "Akamai",
-                "level": "80%"
-            },
-            {
-                "name": "Dynatrace",
-                "level": "85%"
-            },
-            {
-                "name": "Splunk",
-                "level": "80%"
-            },
-            {
-                "name": "Jira",
-                "level": "80%"
-            },
-            {
-                "name": "SonarQube",
-                "level": "70%"
-            }
-        ],
-
-        // Data Science: Data Collection and Analysis, Deep Neural Networks (Pytorch), CNN, Transformers, Prompt Engineering. 
-        "data_science": [
-            {
-                "name": "Data Collection and Analysis",
-                "level": "90%"
-            },
-            {
-                "name": "Deep Neural Networks (Pytorch)",
-                "level": "80%"
-            },
-            {
-                "name": "CNN",
-                "level": "85%"
-            },
-            {
-                "name": "Transformers",
-                "level": "80%"
-            },
-            {
-                "name": "Prompt Engineering",
-                "level": "80%"
-            }
-        ],
+        ]
     },
 
 

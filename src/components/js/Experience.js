@@ -14,7 +14,11 @@ function Experience({ id }) {
           </div>
         </div>
         <div className="job-content">
-          <p>{job.description}</p>
+          <ul className="job-description">
+            {job.description.map((point, idx) => (
+              <li key={idx}>{point}</li>
+            ))}
+          </ul>
         </div>
       </div>
     );
