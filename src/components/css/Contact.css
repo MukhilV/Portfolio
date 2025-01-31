@@ -10,3 +10,7 @@
 .contact-header{
     margin: auto;
 }
+
+.height-100{
+    height: 100vh;
+}

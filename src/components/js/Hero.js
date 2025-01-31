@@ -4,7 +4,7 @@ import data from '../../data/data';
 
 
 const Hero = ({ id }) => {
-  return <section id={id} className="section hero-bg .height-100">
+  return <section id={id} className="section hero-bg height-100">
     <div className="hero-container">
 
       <div className='hero-content'>

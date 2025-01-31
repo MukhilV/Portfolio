@@ -16,7 +16,7 @@ function Contact({ id }){
 //   });
   
   return (
-    <section id={id} className="section">
+    <section id={id} className="section height-100">
     <div className='contact-container'>
       <div className='contact-header'>
         <h1>{data.Contact.title}</h1>

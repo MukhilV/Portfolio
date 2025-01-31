@@ -204,13 +204,13 @@ const data ={
         "projects": [
             {
                 "title": "Next Gen Configurator",
-                "description": "As a Software Engineer at Ford Motor Company, I worked on 'Next Gen-Configurator' "+ 
+                "description": "As a Software Engineer at Ford Motor Company, I worked on 'Next Gen-Configurator' "+
                 "application in 'IMG e-Commerce Reservation' Team. The application allows the end user to configure "+
                 "the ford vehicle of their choice and reserve the same without the need to directly go to showroom "+
                 "in-person. Our team were developing and maintaining the application for six of such countries under "+
                 "International Market Groups.  Website: Ford Build and Price",
                 "img": ngc_img,
-                "url": "https://example.com"
+                "url": "http://ford.com.au/buy/build-and-price.html#/model"
             },
             {
                 "title": "Retrieve relevant articles using RAG",
@@ -220,7 +220,7 @@ const data ={
                 "The project is carried out by following the RAG framework and it is still under progress.  "+
                 "Currently, different models and methods are currently being evaluated to increase the performance.",
                 "img": rag_img,
-                "url": "https://example.com"
+                "url": "https://huggingface.co/docs/transformers/en/model_doc/rag"
             },
             {
                 "title": "OPRA",
@@ -231,7 +231,7 @@ const data ={
                 "according to our specific needs and maintaining it in two different environments.  Here is the GitHub  "+
                 "link for the Project.",
                 "img": opra_img,
-                "url": "https://example.com"
+                "url": "https://github.com/MukhilV/opra"
             },
             {
                 "title": "Interactive Dashboard",
@@ -241,7 +241,7 @@ const data ={
                 "engagement via upvotes/likes and replies and  analyzes the sentiment/toxicity of the collected  "+
                 "posts using Moderate Hate speech API and Pre-trained models like Sentence- BERT. ",
                 "img": dashboard_img,
-                "url": "https://example.com"
+                "url": "https://github.com/MukhilV/Data_science_social_media_pipeline"
             },
             {
                 "title": "E-Society",
@@ -252,7 +252,7 @@ const data ={
                 "raised. Tracking payments, modifications to events, data manipulation and report generation  "+
                 "are made easier and the system provides security as well.",
                 "img": esociety_img,
-                "url": "https://example.com"
+                "url": "https://github.com/MukhilV/esociety_java"
             }
             
         ]
