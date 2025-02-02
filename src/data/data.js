@@ -70,7 +70,11 @@ const data ={
                 "degree": "Master of Science in Computer Science",
                 "school": "SUNY Binghamton",
                 "date": "Aug 2023 - May 2025",
-                "description": ["Talk about RA","Talk about TA","Talk about Courses"]
+                "description": [
+                    "As a Research Assistant in the AI and ML domain, I'm working on a project using RAG framework.",
+                    "Spearheaded the project OPRA which aids there search field of Computational Social Choice.",
+                    "Excelled in the courses like Machine Learning, Artificial Intelligence, and Design and Analysis of Algorithms."
+                ]
             },
             {
                 "degree": "Bachelor of Engineering in Computer Science and Engineering",
@@ -262,7 +266,13 @@ const data ={
         "email": "mukhil99@gmail.com",
         "linkedin": "https://www.linkedin.com/in/mukhil-v-523995175/",
         "github": "https://github.com/MukhilV"
-        }
+        },
+
+    "Footer": {
+        "email": "mukhil99@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/mukhil-v-523995175/",
+        "github": "https://github.com/MukhilV"
+    }
 }
 
 export default data;

@@ -7,7 +7,7 @@ function Projects({ id }) {
     <section id={id} className="section extend-height">
       <div className="proj-container">
         <div className="proj-header">
-          <h1>{data.Projects.title}</h1>
+          <h1 className='proj-title'>{data.Projects.title}</h1>
         </div>
         <div className="proj-grid">
           {data.Projects.projects.map((project, index) => (

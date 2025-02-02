@@ -33,7 +33,7 @@ function Skills({ id }) {
     <section id={id} className="section">
       <div className="skills-container">
         <div className="skills-header">
-          <h1>{data.Skills.title}</h1>
+          <h1 className='skills-title'>{data.Skills.title}</h1>
         </div>
         <div className="skills-grid">{skills}</div>
       </div>

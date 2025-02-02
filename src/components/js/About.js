@@ -4,7 +4,7 @@ import img from '../../images/mukhil.png';
 import data from '../../data/data';
 
 const About = ({ id }) => {
-  return <section id={id} className="section variable-height">
+  return <section id={id} className="section variable-height custom-bg-color bg-img">
     <div className='about-container'>
       <div className='about-header'>
         <h1 className="section-title">About Me</h1>

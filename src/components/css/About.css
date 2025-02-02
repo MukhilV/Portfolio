@@ -1,35 +1,87 @@
-.about-container{
+.custom-bg-color{
+    background-color: aliceblue;
+}
+
+.about-container {
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    width: 75%;
-    padding-top: 7%;
+    /* width: 80%; */
+    padding-top: 5%;
+    padding-bottom: 5%;
+    /* background: linear-gradient(to right, #f8f8f8, #e6e6e6);  Soft gradient */
+    border-radius: 10px;
+    /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); */
 }
 
-/* .about-header{
-    padding-right: 5%;
-} */
+/* Section Header Styling */
+.about-header {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+}
 
+.section-title {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+}
 
-.about-content{
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #ff9800;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}
+
+/* Layout Improvements */
+.about-content {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    /* max-width: 900px; */
 }
 
-.portfolio-photo{
-    width: 300px;
+/* Image Styling */
+.portfolio-photo {
+    width: 350px;
+    height: 350px;
+    border-radius: 25px 0px 0px 25px;
+    /* border: 3px solid #fff;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
+    transition: transform 0.3s ease-in-out;
+    padding-right: 30px;
 }
 
-.about-image{
-    padding: 5%;
+.portfolio-photo:hover {
+    transform: scale(1.05);
 }
 
-.about-text{
+/* Background Pattern */
+.bg-img {
+    background-image: url('C:/Users/mukhi/OneDrive/Documents/GitHub/Portfolio/my-portfolio/src/images/map_img.png'); /* Replace with an actual pattern image */
+    /* background-size: cover;
+    background-blend-mode: overlay; */
+}
+
+/* Text Styling */
+.about-text {
+    max-width: 500px;
     text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color: #333;
 }
 
-.variable-height{
+.variable-height {
     height: auto;
+    padding: 20px;
 }

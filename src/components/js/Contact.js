@@ -1,43 +1,72 @@
-import React from 'react';
+import React, { useState }from 'react';
 import '../css/Contact.css';
-import data from '../../data/data';
+// import data from '../../data/data';
 
-function Contact({ id }){
+function Contact({ id }) {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
 
-//   const projects = data.Projects.projects.map((project, index) => {
-//     return (
-//       <div key={index} className='project'>
-//         <h3>{project.title}</h3>
-//         <p>{project.description}</p>
-//         <a href={project.url}>{project.url}</a>
-//         <img src={project.img} alt={project.title} />
-//       </div>
-//       );
-//   });
-  
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Message Sent:", formData);
+    alert("Your message has been sent!");
+    setFormData({ name: "", email: "", subject: "", message: "" });
+  };
+
   return (
-    <section id={id} className="section height-100">
-    <div className='contact-container'>
-      <div className='contact-header'>
-        <h1>{data.Contact.title}</h1>
+    <section id={id} className="section height-100 custom-bg-color">
+      <div className="contact-container">
+        <div className="contact-header">
+          <h1 className="contact-title">Contact Me</h1>
+        </div>
+        <form className="contact-form" onSubmit={handleSubmit}>
+          <input
+            type="text"
+            name="name"
+            placeholder="Your Name"
+            value={formData.name}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Your Email"
+            value={formData.email}
+            onChange={handleChange}
+            required
+          />
+          <input
+            type="text"
+            name="subject"
+            placeholder="Subject"
+            value={formData.subject}
+            onChange={handleChange}
+            required
+          />
+          <textarea
+            name="message"
+            placeholder="Your Message"
+            rows="4"
+            value={formData.message}
+            onChange={handleChange}
+            required
+          ></textarea>
+          <button type="submit" className="contact-button">
+            <p>SEND MESSAGE</p>
+            </button>
+        </form>
       </div>
-      <div>
-        <p>
-          {data.Contact.email}
-        </p>
-        <p>
-          {data.Contact.phone}
-        </p>
-        <p>
-          {data.Contact.linkedin}
-        </p>
-        <p>
-          {data.Contact.github}
-        </p>
-      </div> 
-    </div>
-  </section> 
+    </section>
   );
-};
+}
 
 export default Contact;

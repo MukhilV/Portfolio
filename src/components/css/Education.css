@@ -10,3 +10,21 @@
 .edu-header{
     margin: auto;
 }
+
+.edu-title {
+    font-size: 2rem;
+    font-weight: bold;
+    position: relative;
+}
+
+.edu-title::after {
+    content: "";
+    width: 80px;
+    height: 4px;
+    background: #ff9800;
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 5px;
+}

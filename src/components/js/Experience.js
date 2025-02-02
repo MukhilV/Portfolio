@@ -28,7 +28,7 @@ function Experience({ id }) {
     <section id={id} className="section extend-height">
       <div className="exp-container">
         <div className="exp-header">
-          <h1>{data.Experience.title}</h1>
+          <h1 className='exp-title'>{data.Experience.title}</h1>
         </div>
         <div className="exp-list">{experience}</div>
       </div>

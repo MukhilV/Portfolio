@@ -40,7 +40,7 @@ function Education ({ id }) {
     <section id={id} className="section">
     <div className='edu-container'>
       <div className='edu-header'>
-        <h1>{data.Education.title}</h1>
+        <h1 className='edu-title'>{data.Education.title}</h1>
       </div>
       <div>
           {education}
