@@ -72,7 +72,7 @@ const data ={
                 "date": "Aug 2023 - May 2025",
                 "description": [
                     "As a Research Assistant in the AI and ML domain, I'm working on a project using RAG framework.",
-                    "Spearheaded the project OPRA which aids there search field of Computational Social Choice.",
+                    "Spearheaded the project OPRA which aids the research field of Computational Social Choice.",
                     "Excelled in the courses like Machine Learning, Artificial Intelligence, and Design and Analysis of Algorithms."
                 ]
             },
@@ -80,7 +80,11 @@ const data ={
                 "degree": "Bachelor of Engineering in Computer Science and Engineering",
                 "school": "Anna University",
                 "date": "2017 - 2021",
-                "description": ["Final yr proj - E-society","Best student award","Big data coe"]
+                "description": [
+                    "Developed and implemented 'E-Society,' a Financial and Event Management System designed for a closed community as my final year project ",
+                    "Received the Best Student Award for outstanding academic performance, leadership, and contributions to collaborative projects.",
+                    "Gained research and practical exposure in the fields of Data Science, by being a member of the Big Data Center of Excellence."
+                ]
             }
         ]
     },
