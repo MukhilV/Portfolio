@@ -9,6 +9,7 @@ import Education from './components/js/Education';
 import Skills from './components/js/Skills';
 import Projects from './components/js/Projects';
 import Contact from './components/js/Contact';
+import Footer from './components/js/Footer';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -27,7 +28,7 @@ function App() {
     }
     const sections = document.querySelectorAll('section');
     const navbarHeight = document.querySelector('.navbar').offsetHeight;
-    const scrollPosition = window.scrollY + navbarHeight  + 10; // Offset for nav height
+    const scrollPosition = window.scrollY + navbarHeight  + 50; // Offset for nav height
 
     sections.forEach((section) => {
       const id = section.getAttribute('id');
@@ -72,7 +73,7 @@ function App() {
     window.scrollTo(0,1);
   },[])
 
-  const navItems = ['home', 'about', 'experience', 'education', 'skills', 'projects', 'contact'];
+  const navItems = ['home', 'about', 'education', 'experience', 'skills', 'projects', 'contact'];
 
   return (
     <div className="App">
@@ -128,11 +129,12 @@ function App() {
     </nav>
       <Hero id="home" />
       <About id="about" />
-      <Experience id="experience" />
       <Education id="education" />
+      <Experience id="experience" />
       <Skills id="skills" />
       <Projects id="projects" />
       <Contact id="contact" />
+      <Footer id="footer" />
     </div>
   );
 }

@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 75%;
-    padding-top: 5%;
+    padding-top: 3%;
 }
 
 .contact-header {
@@ -69,9 +69,9 @@
     font-weight: bolder;
 }
 
-.contact-button:hover {
-    background-color: #e68900;
-}
+/* .contact-button:hover {
+    background-color: darkgray;
+} */
 
 input::placeholder, textarea::placeholder {
     font-family: 'Roboto', sans-serif;
