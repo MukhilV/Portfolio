@@ -4,14 +4,14 @@ import '../css/Footer.css';
 import data from '../../data/data';
 
 function Footer() {
-  const footer = data.Footer;
+  const urls = data.Footer.URLs;
   return (
     <footer className="footer">
       <div className="footer-icons">
-        <a href={footer.linkedin} target="_blank" rel="noopener noreferrer">
+        <a href={urls.linkedin} target="_blank" rel="noopener noreferrer">
           <FaLinkedin className="footer-icon" />
         </a>
-        <a href={footer.github} target="_blank" rel="noopener noreferrer">
+        <a href={urls.github} target="_blank" rel="noopener noreferrer">
           <FaGithub className="footer-icon" />
         </a>
       </div>

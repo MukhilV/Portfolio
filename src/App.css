@@ -157,3 +157,24 @@ body {
   gap: 10px;
 
 }
+
+.nav-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.nav-icon {
+  font-size: 1.8rem;
+  color: white;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.custom-color {
+  color: wheat;
+}
+
+.nav-icon:hover {
+  color: wheat;
+  transform: scale(1.2);
+}

@@ -59,8 +59,8 @@
 }
 
 .project-content a {
-    color: blue;
-    text-decoration: none;
+    color: darkkhaki;
+    text-decoration: underline;
     font-weight: bold;
 }
 

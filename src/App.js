@@ -1,6 +1,7 @@
 
 // App.js
 import React, { useState, useEffect } from 'react';
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 import './App.css';
 import Hero from './components/js/Hero';
 import About from './components/js/About';
@@ -11,6 +12,7 @@ import Projects from './components/js/Projects';
 import Contact from './components/js/Contact';
 import Footer from './components/js/Footer';
 import ScrollToTop from './components/js/ScrollTop';
+import data from './data/data';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -24,8 +26,10 @@ function App() {
   const handleScroll = () => {
     if(window.scrollY >= 100){
       document.querySelector('.navbar').classList.add('navbar-opaque');
+      // document.querySelector('.nav-icons').classList.add('custom-color');
     } else {
       document.querySelector('.navbar').classList.remove('navbar-opaque');
+      // document.querySelector('.nav-icons').classList.remove('custom-color');
     }
     const sections = document.querySelectorAll('section');
     const navbarHeight = document.querySelector('.navbar').offsetHeight;
@@ -75,6 +79,7 @@ function App() {
   },[])
 
   const navItems = ['home', 'about', 'education', 'experience', 'skills', 'projects', 'contact'];
+  const urls = data.Footer.URLs;
 
   return (
     <div className="App">
@@ -126,6 +131,14 @@ function App() {
             </ul>
           </div>
         )}
+        <div className="nav-icons">
+          <a href={urls.linkedin} target="_blank" rel="noopener noreferrer">
+            <FaLinkedin className="nav-icon" />
+          </a>
+          <a href={urls.github} target="_blank" rel="noopener noreferrer">
+            <FaGithub className="nav-icon" />
+          </a>
+        </div>
       </div>
     </nav>
       <Hero id="home" />

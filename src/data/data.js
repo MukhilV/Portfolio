@@ -273,9 +273,11 @@ const data ={
         },
 
     "Footer": {
-        "email": "mukhil99@gmail.com",
-        "linkedin": "https://www.linkedin.com/in/mukhil-v-523995175/",
-        "github": "https://github.com/MukhilV"
+        "email": "mukhil99@gmail.com"  ,
+        "URLs": {
+            "linkedin": "https://www.linkedin.com/in/mukhil-v-523995175/",
+            "github": "https://github.com/MukhilV"
+        },       
     }
 }
 
