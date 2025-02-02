@@ -10,6 +10,7 @@ import Skills from './components/js/Skills';
 import Projects from './components/js/Projects';
 import Contact from './components/js/Contact';
 import Footer from './components/js/Footer';
+import ScrollToTop from './components/js/ScrollTop';
 
 function App() {
   const [activeSection, setActiveSection] = useState('home');
@@ -135,6 +136,7 @@ function App() {
       <Projects id="projects" />
       <Contact id="contact" />
       <Footer id="footer" />
+      <ScrollToTop id="scroll-top" />
     </div>
   );
 }
