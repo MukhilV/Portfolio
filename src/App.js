@@ -14,6 +14,8 @@ import Footer from './components/js/Footer';
 import ScrollToTop from './components/js/ScrollTop';
 import data from './data/data';
 
+import './components/css/Navbar.css';
+
 function App() {
   const [activeSection, setActiveSection] = useState('home');
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -75,6 +77,18 @@ function App() {
   }, []);
 
   useEffect(()=>{
+    if(isMobile) {
+      if (document.querySelector('.hambuger-menu')) document.querySelector('.hambuger-menu').classList.add('order-1');
+      if (document.querySelector('.site-name')) document.querySelector('.site-name').classList.add('order-2');
+      if (document.querySelector('.nav-icons')) document.querySelector('.nav-icons').classList.add('order-3');
+    } else {
+      if (document.querySelector('.hambuger-menu')) document.querySelector('.hambuger-menu').classList.remove('order-1');
+      if (document.querySelector('.site-name')) document.querySelector('.site-name').classList.remove('order-2');
+      if (document.querySelector('.nav-icons')) document.querySelector('.nav-icons').classList.remove('order-3');
+    }
+  },[isMobile])
+
+  useEffect(()=>{
     window.scrollTo(0,1);
   },[])
 
@@ -111,7 +125,18 @@ function App() {
                       {section.charAt(0).toUpperCase() + section.slice(1)}
                     </li>
                   ))}
+                  <li>
+                    <div className="mobile-nav-icons">
+                      <a href={urls.linkedin} target="_blank" rel="noopener noreferrer">
+                        <FaLinkedin className="mobile-nav-icon" />
+                      </a>
+                      <a href={urls.github} target="_blank" rel="noopener noreferrer">
+                        <FaGithub className="mobile-nav-icon" />
+                      </a>
+                    </div>
+                  </li>
                 </ul>
+                
               </div>
             )}
           </div>
