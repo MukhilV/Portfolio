@@ -43,6 +43,12 @@
     width: 100%; /* Full width inside the container */
     box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   }
+
+  @media (max-width: 920px) {
+    .job-box {
+      width: auto;
+    }
+  }
   
   /* Job Header Section */
   .job-header {

@@ -19,6 +19,12 @@
     width: 100%;
 }
 
+@media (max-width: 920px) {
+    .proj-grid {
+        grid-template-columns: auto;
+    }
+}
+
 /* Project Card */
 .project-card {
     background-color: aliceblue; /* Light beige background - # f5f5dc*/ 

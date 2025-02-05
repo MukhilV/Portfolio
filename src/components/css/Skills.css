@@ -14,10 +14,17 @@
 
 .skills-grid {
     display: grid;
+    /* grid-template-columns: auto; */
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 20px;
     width: 100%;
 }
+
+@media (max-width: 920px) {
+    .skills-grid {
+        grid-template-columns: auto;
+    }
+  }
 
 .skill-box {
     background-color: aliceblue; /* Light beige background - #f5f5dc*/
