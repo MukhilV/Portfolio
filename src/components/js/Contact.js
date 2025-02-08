@@ -1,6 +1,7 @@
 import React, { useState }from 'react';
 import '../css/Contact.css';
 // import data from '../../data/data';
+import emailjs from "emailjs-com";
 
 function Contact({ id }) {
   const [formData, setFormData] = useState({
@@ -16,8 +17,22 @@ function Contact({ id }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Message Sent:", formData);
-    alert("Your message has been sent!");
+
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID;  // Replace with EmailJS Service ID
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID; // Replace with EmailJS Template ID
+    const userId = process.env.REACT_APP_EMAILJS_USER_ID; // Replace with your EmailJS User ID
+
+    emailjs.send(serviceId, templateId, formData, userId)
+      .then((response) => {
+        console.log("Email sent successfully!", response.status, response.text);
+        alert("Your message has been sent successfully!");
+      })
+      .catch((error) => {
+        console.error("Error sending email:", error);
+        alert("Failed to send message. Please try again later.");
+      });
+
+    // Reset form fields after submission
     setFormData({ name: "", email: "", subject: "", message: "" });
   };
 
@@ -62,7 +77,7 @@ function Contact({ id }) {
           ></textarea>
           <button type="submit" className="contact-button">
             <p>SEND MESSAGE</p>
-            </button>
+          </button>
         </form>
       </div>
     </section>
