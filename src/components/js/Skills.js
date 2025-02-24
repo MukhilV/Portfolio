@@ -13,7 +13,7 @@ function Skills({ id }) {
               <div key={idx} className="skill">
                 <div className="skill-header">
                   <h3>{skill.name}</h3>
-                  <p>{skill.level}%</p>
+                  <p>{skill.level}</p>
                 </div>
                 <div className="progress-bar">
                   <div
