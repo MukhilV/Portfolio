@@ -8,7 +8,7 @@ const data ={
 
 
     "Home": {
-        "name": "Mukhil Venkataramanan",
+        "name": "MUKHIL VENKATARAMANAN",
         "description": "CS Grad @ SUNY Binghamton | Ex-SDE @ Ford Motor Company",
     },
 
@@ -101,23 +101,23 @@ const data ={
                     },
                     {
                         "name": "Java",
+                        "level": "85%"
+                    },
+                    {
+                        "name": "JavaScript(ES6+)",
+                        "level": "85%"
+                    },
+                    {
+                        "name": "C/C++",
                         "level": "80%"
                     },
                     {
-                        "name": "JavaScript",
-                        "level": "85%"
+                        "name": "TypeScript",
+                        "level": "70%"
                     },
                     {
                         "name": "SQL",
                         "level": "80%"
-                    },
-                    {
-                        "name": "C++",
-                        "level": "80%"
-                    },
-                    {
-                        "name": "C",
-                        "level": "70%"
                     }
                 ]
             },
@@ -125,23 +125,23 @@ const data ={
                 "category": "Frame Works and Tools",
                 "skills": [
                     {
-                        "name": "React",
+                        "name": "React(& redux)",
                         "level": "90%"
-                    },
-                    {
-                        "name": "Redux",
-                        "level": "80%"
                     },
                     {
                         "name": "Django",
                         "level": "85%"
                     },
                     {
+                        "name": "Flask",
+                        "level": "80%"
+                    },
+                    {
                         "name": "Spring Boot",
                         "level": "80%"
                     },
                     {
-                        "name": "Git",
+                        "name": "Git & GitHub",
                         "level": "80%"
                     },
                     {
@@ -153,46 +153,42 @@ const data ={
                 "category": "Specialized Tools",
                 "skills": [
                     {
+                        "name": "Chrome Dev Tools",
+                        "level": "90%"
+                    },
+                    {
+                        "name": "Postman",
+                        "level": "90%"
+                    },
+                    {
                         "name": "AEM",
                         "level": "90%"
                     },
                     {
-                        "name": "Akamai",
+                        "name": "Dynatrace & Splunk",
                         "level": "80%"
                     },
                     {
-                        "name": "Dynatrace",
-                        "level": "85%"
-                    },
-                    {
-                        "name": "Splunk",
+                        "name": "Akamai - CDN",
                         "level": "80%"
                     },
                     {
-                        "name": "Jira",
-                        "level": "80%"
-                    },
-                    {
-                        "name": "SonarQube",
+                        "name": "SonarQube & Checkmarx",
                         "level": "70%"
-                    }
+                    },
                 ]
             }, 
             {
                 "category": "Data Science",
                 "skills": [
                     {
-                        "name": "Data Collection and Analysis",
-                        "level": "90%"
+                        "name": "RAG Framework",
+                        "level": "85%"
                     },
                     {
                         "name": "Deep Neural Networks (Pytorch)",
-                        "level": "80%"
-                    },
-                    {
-                        "name": "CNN",
                         "level": "85%"
-                    },
+                    }, 
                     {
                         "name": "Transformers",
                         "level": "80%"
@@ -200,7 +196,15 @@ const data ={
                     {
                         "name": "Prompt Engineering",
                         "level": "80%"
-                    }
+                    },
+                    {
+                        "name": "PostGreSQL",
+                        "level": "80%"
+                    }, 
+                    {
+                        "name": "Data Collection and Analysis",
+                        "level": "80%"
+                    },
                 ]
             }
         ]
@@ -267,6 +271,7 @@ const data ={
     },
     "Contact": {
         "title": "Contact",
+        "phone": "+1 (607) 297- 0306",
         "email": "mukhil99@gmail.com",
         "linkedin": "https://www.linkedin.com/in/mukhil-v-523995175/",
         "github": "https://github.com/MukhilV"
