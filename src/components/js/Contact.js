@@ -1,7 +1,9 @@
 import React, { useState }from 'react';
 import '../css/Contact.css';
-// import data from '../../data/data';
+import data from '../../data/data';
 import emailjs from "emailjs-com";
+import { FaPhoneAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 
 function Contact({ id }) {
   const [formData, setFormData] = useState({
@@ -79,6 +81,16 @@ function Contact({ id }) {
             <p>SEND MESSAGE</p>
           </button>
         </form>
+        <div className='contact-info-container'>
+        <div className='phone-info'>
+            <FaPhoneAlt className='phone-icon'/>
+            <p>{data.Contact.phone}</p>
+          </div>
+          <div className='email-info'>
+            <MdEmail className='email-icon'/>
+            <p>{data.Contact.email}</p>
+          </div>
+        </div>
       </div>
     </section>
   );
