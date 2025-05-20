@@ -18,6 +18,8 @@ const data ={
     "About": {
         "title": "About me",
 
+        "resume": "https://drive.google.com/file/d/1zofg7wmalYYGcaxAQA0p1l5VRGG96-DJ/view?usp=sharing",
+
         "description_1": "A Computer Science Graduate Student and Teaching/Research Assistant at State University of New York(SUNY) " +
         "at Binghamton. As a Research Assistant, I'm working on a Machine Learning project, specifically in the domain of Information" +
         "Retrieval(IR) using the Retrieval Augmented Generation(RAG) Framework. I have also worked on enhancing the Online Preference " +

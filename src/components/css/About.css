@@ -42,6 +42,25 @@
     border-radius: 5px;
 }
 
+@media (max-width: 920px) {
+    .about-left-panel{
+        width: 100%;
+        margin: auto;
+    }
+}
+
+
+
+.about-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    /* max-width: 400px; */
+    margin: auto;
+}
+
+
 /* Layout Improvements */
 .about-content {
     display: flex;
@@ -50,6 +69,46 @@
     flex-wrap: wrap;
     width: 100%;
     /* max-width: 900px; */
+}
+
+
+.about-resume{
+    display: flex;
+    height: 40px;
+    width: 80%;
+    justify-content: center;
+    background-color: burlywood;
+    border-radius: 7px;
+    margin: auto;
+    cursor: pointer;
+    
+}
+
+@media (min-width: 500px) and (max-width: 920px) {
+    .about-resume{
+        width: 60%;
+    }
+}
+
+.resume-link{
+    margin: auto;
+    width: 100%;
+    text-decoration: none; 
+}
+
+.resume-button{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #2b2626;
+}
+
+.resume-text{
+    padding-right: 10px;
+}
+
+.resume-download-icon{
+    margin-top: 3px;
 }
 
 /* Image Styling */
@@ -61,6 +120,13 @@
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); */
     transition: transform 0.3s ease-in-out;
     padding: 30px;
+}
+
+@media (max-width: 920px) {
+    .portfolio-photo {
+        width: 280px;
+        height: 280px;
+    }
 }
 
 .portfolio-photo:hover {

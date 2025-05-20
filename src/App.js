@@ -35,7 +35,7 @@ function App() {
     }
     const sections = document.querySelectorAll('section');
     const navbarHeight = document.querySelector('.navbar').offsetHeight;
-    const scrollPosition = window.scrollY + navbarHeight  + 200; // Offset for nav height
+    const scrollPosition = window.scrollY + navbarHeight  + 270; // Offset for nav height
 
     sections.forEach((section) => {
       const id = section.getAttribute('id');
